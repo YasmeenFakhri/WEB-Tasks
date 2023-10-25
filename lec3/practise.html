@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3 </title>
+</head>
+<body>
+    <form    action="http://example.com/join.php"   method="get">
+        <p>Username:
+             <input type="text" name="username" size="15" maxlength="30" />
+        </p>
+        <p>Password:
+        <input type="password" name="password" size="15" maxlength="30" />
+        </p>
+        <p>
+            What did you think of this gig?
+        </p>
+        <textarea name="comments"  cols="20" rows="10">
+        Enter your comments...
+        </textarea>
+
+        <p>enter your gender : 
+        <input type="radio"  name ="gender" value="male"  checked="checked"> male 
+        <input type="radio"  name ="gender" value="female"> female  
+        </p>
+
+        <p>
+            your fav music servise :
+            <input type="checkbox" name="service" value="itunes" checked>itunes
+            <input type="checkbox" name="service" value="mp3"   >mp3
+            <input type="checkbox" name="service" value="spotify">spotify
+        </p>
+        <select name="devices" size="4">
+            <option value="ipod" selected = "selected">ipod</option>
+            <option value="radio" >radio</option>
+            <option value="computer" selected="selected" >computer</option>
+        </select>
+        <p>
+            Upload your song in MP3 format:
+        </p>
+        <input type="file" name="user-song" />
+        <input type="submit" value="submit" />
+        <p>
+            Subscribe to our email list:
+        </p>
+        <input type="text" name="email" /> 
+       
+        <input type="image"    src="../lec2/BG7.PNG"    width="100" height="50" />    
+        <button>
+            <img src="../lec2/BG7.PNG" alt="add"
+            width="10" height="20" /> 
+        </button>
+        <input type="hidden" name="bookmark"  value="lyrics" />
+        <label for="date">Departure date:</label>
+        <input type="date" name="depart" id="date" />
+
+        <input type="url" name="website" />
+        
+        <input type="search" name="search" placeholder="Enter keyword" />
+        <input type="submit" value="Search" />
+
+        </form>
+
+        <fieldset>
+            <legend>Contact details</legend>
+             <label>Email:<br /> 
+                <input type="text" name="email">
+            </label> 
+            <br /> 
+            <label>Mobile:<br />
+            <input type="text" name="mobile"></label>
+             <br />
+            <label>Telephone:<br />
+            <input type="text" name="tel"></label>
+        </fieldset>
+
+
+</body>
+</html>
